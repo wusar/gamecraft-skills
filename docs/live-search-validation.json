@@ -1,0 +1,27 @@
+{
+  "checked_date": "2026-10-29",
+  "checks": [
+    {
+      "operation": "search",
+      "passed": true,
+      "cache_hit": false,
+      "evidence_state": "discovered",
+      "result_count": 3
+    },
+    {
+      "operation": "search",
+      "passed": true,
+      "cache_hit": true,
+      "evidence_state": "discovered",
+      "result_count": 3
+    },
+    {
+      "operation": "fetch",
+      "passed": true,
+      "cache_hit": false,
+      "evidence_state": "retrieved",
+      "title": "Search & Fetch | DeepSeek API Docs",
+      "content_characters": 9406
+    }
+  ]
+}

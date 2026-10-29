@@ -1,0 +1,15 @@
+{
+ "title":"GameCraft Skills：把经验变成可玩的游戏","width":1920,"height":1080,"fps":24,
+ "voice":"Microsoft Huihui Desktop",
+ "route":"AI-generated illustration + deterministic Canvas graphics + system TTS; not gameplay or text-to-video",
+ "scenes":[
+  {"id":"intro","mode":"hero","eyebrow":"GAMECRAFT SKILLS","title":"经验，变成可玩的游戏","bullets":["开源 AI 游戏开发工作流","从视频和原始资料，到执行与验收"],"narration":"好看的游戏演示之后，怎样把经验用到自己的项目里？GameCraft Skills，把开发视频中的实践，整理成可执行的游戏制作工作流。"},
+  {"id":"evidence","mode":"sources","eyebrow":"01 / EVIDENCE","title":"先找到证据，再形成方法","bullets":["11 条视频音轨分析","原作者 · 时间点 · 适用条件","作者演示，与本机验证分开记录"],"narration":"第一版整理了十一条视频的音轨，并抽查关键画面。每条经验保留作者、时间点和适用条件。作者演示和本机验证，分别标注。"},
+  {"id":"search","mode":"search","eyebrow":"02 / RESEARCH","title":"让搜索成为制作的一部分","bullets":["DeepSeek Search：找原始来源","Fetch：取得网页正文","本地缓存，保留检索记录"],"narration":"信息搜索是管线的一部分。用 DeepSeek Search 找来源，用 Fetch 取得正文，再对照官方文档和原仓库。搜索结果先是线索，核验之后才成为经验。"},
+  {"id":"prototype","mode":"pipeline","eyebrow":"03 / PLAYABLE FIRST","title":"从一局能玩的原型开始","bullets":["复用合适的工程和模板","进入 → 挑战 → 结束 → 重来","一次实现一个可观察的行为"],"narration":"做游戏时，先复用合适的工程和模板。跑通一局能够开始、挑战、结束和重来的小样。每次实现一个行为，实际运行之后再继续扩展。"},
+  {"id":"assets","mode":"playground","eyebrow":"04 / ASSET CONTRACT","title":"先跑通一个角色，再扩阵容","bullets":["单位 · 朝向 · 骨架 · 动画事件","位移由脚本或动画统一负责","专用测试场：动作、碰撞、命中"],"narration":"三维资产先跑通一个角色。统一缩放、朝向、骨架和动画事件。建立专用测试场，检查动作、碰撞与命中。通过以后，再扩充角色阵容。"},
+  {"id":"verify","mode":"loop","eyebrow":"05 / REAL FEEDBACK","title":"让 AI 看见自己的结果","bullets":["运行构建，施加真实输入","截图、状态与日志相互核对","保存检查点，保留已知缺陷"],"narration":"让 AI 运行游戏，施加真实输入，再用截图、状态和日志核对结果。保存可用的检查点，把未解决的问题留下来。一次漂亮演示，不等于完成交付。"},
+  {"id":"video","mode":"video","eyebrow":"06 / SHARE THE PROCESS","title":"把制作过程讲清楚","bullets":["实机、概念画面和动效分别标注","分镜 → 配音 → 字幕 → 渲染","分享原创提炼，链接回作者"],"narration":"需要介绍作品时，再做分镜、配音、字幕和视频。实机画面与概念演示明确区分。开源只分享原创提炼，保留原始链接，让经验能够继续被检验。"},
+  {"id":"outro","mode":"hero","eyebrow":"OPEN SOURCE / MIT","title":"一起，把工作流做扎实","bullets":["github.com/wusar/gamecraft-skills","gamecraft · research · video","带着来源和复现步骤，欢迎补充"],"narration":"GameCraft Skills 已开源。欢迎带着来源、复现步骤和真实踩坑来补充。我们要积累的，是下一款游戏也能用上的制作经验。"}
+ ]
+}

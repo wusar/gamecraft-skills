@@ -1,0 +1,59 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>GameCraft Skills · Film</title>
+<style>html,body{margin:0;background:#07111d;overflow:hidden}canvas{display:block;width:100vw;height:100vh}</style>
+<canvas id="film" width="1920" height="1080"></canvas>
+<script>
+const c=document.querySelector('canvas'),x=c.getContext('2d');
+const P={bg:'#07111d',panel:'#101f30',white:'#edf6ff',muted:'#93aabf',teal:'#64e4cd',gold:'#ffc675'};
+const hero=new Image();hero.src='assets/hero.png';
+const font='"Microsoft YaHei", "Noto Sans CJK SC", sans-serif';
+const clamp=(v)=>Math.max(0,Math.min(1,v)),ease=(v)=>1-Math.pow(1-clamp(v),3);
+let board,errors=[];
+function text(t,px,py,size=40,color=P.white,weight=500,max=1700){x.font=`${weight} ${size}px ${font}`;x.fillStyle=color;if(x.measureText(t).width>max)errors.push({text:t,width:x.measureText(t).width,max});x.fillText(t,px,py)}
+function rr(px,py,w,h,r=22,fill=P.panel,stroke=null){x.beginPath();x.roundRect(px,py,w,h,r);if(fill){x.fillStyle=fill;x.fill()}if(stroke){x.strokeStyle=stroke;x.lineWidth=2;x.stroke()}}
+function line(ax,ay,bx,by,color=P.teal,width=3){x.beginPath();x.moveTo(ax,ay);x.lineTo(bx,by);x.strokeStyle=color;x.lineWidth=width;x.stroke()}
+function dot(px,py,r,color=P.teal){x.beginPath();x.arc(px,py,r,0,7);x.fillStyle=color;x.fill()}
+function node(label,px,py,w=212){rr(px,py,w,84,17,P.panel,'#29465b');text(label,px+24,py+54,30,P.white,600,w-40)}
+function heroBg(t){const s=1.03+.015*Math.sin(t*.1);const w=1920*s,h=hero.height*w/hero.width;x.drawImage(hero,(1920-w)/2,(1080-h)/2,w,h);let g=x.createLinearGradient(0,0,1700,0);g.addColorStop(0,'rgba(2,10,20,.90)');g.addColorStop(.52,'rgba(2,10,20,.57)');g.addColorStop(1,'rgba(2,10,20,.05)');x.fillStyle=g;x.fillRect(0,0,1920,1080)}
+function network(t,mode){
+ const cx=1420,cy=570;
+ if(mode==='sources'){
+  ['视频 / 时间点','条件 / 验收','可执行 SKILL'].forEach((s,i)=>{const yy=340+i*145;rr(1130+i*24,yy,540,108,20,P.panel,'#29465b');text(String(i+1).padStart(2,'0'),1160+i*24,yy+68,38,P.teal,600);text(s,1230+i*24,yy+68,34,P.white,600,390)});
+ } else if(mode==='search'){
+  rr(1090,320,660,425,24,P.panel,'#29465b');text('SEARCH / FETCH',1125,375,28,P.teal,600);line(1120,405,1720,405,'#29465b',2);
+  const q='Godot testing site:github.com';text(q.slice(0,Math.min(q.length,Math.floor(t*13))),1130,460,29,P.white,500,600);
+  ['官方文档','原仓库与 Releases','制作过程与复盘'].forEach((s,i)=>{dot(1138,525+i*70,6);text(s,1160,538+i*70,31,P.white,500,520);line(1160,553+i*70,1650-i*55,553+i*70,'#254558',5)});
+ } else if(mode==='playground'){
+  x.save();x.translate(cx,650);x.scale(1,.45);x.rotate(-Math.PI/4);for(let i=-4;i<=4;i++){line(-340,i*70,340,i*70,'#1d4553',2);line(i*70,-340,i*70,340,'#1d4553',2)}x.restore();
+  const bob=Math.sin(t*3)*8;line(cx,650,cx,390+bob,P.teal,8);dot(cx,365+bob,31,P.teal);line(cx-66,450+bob,cx+66,450+bob,P.teal,7);line(cx,525+bob,cx-52,650,P.teal,7);line(cx,525+bob,cx+52,650,P.teal,7);line(cx-66,450+bob,cx-96,535,P.teal,6);line(cx+66,450+bob,cx+96,535,P.teal,6);
+  rr(cx-125,320,250,360,70,null,'#ffc67566');text('PLAYGROUND',1230,795,35,P.gold,600,500);text('Idle  /  Move  /  Attack',1220,845,27,P.muted,500,550);
+ } else if(mode==='video'){
+  rr(1085,350,670,378,24,P.panel,'#29465b');x.drawImage(hero,1110,375,620,300);rr(1150,610,540,50,10,'#08111ccc');text('概念插画 · 动效 · 合成旁白',1195,645,25,P.white,500,480);
+  for(let i=0;i<8;i++)rr(1100+i*79,755,68,42,6,i<Math.floor(t)%8?P.teal:'#29465b');
+ } else {
+  const labels=mode==='loop'?['实际运行','施加输入','画面与日志','定位修正']:['进入','挑战','结束','重来'];
+  const pts=[[1110,345],[1480,345],[1480,650],[1110,650]];
+  pts.forEach((p,i)=>{node(labels[i],p[0],p[1]);const a=[p[0]+106,p[1]+42],np=pts[(i+1)%4],b=[np[0]+106,np[1]+42];line(a[0],a[1],b[0],b[1],'#2c5c66',3)});
+  pts.forEach((p,i)=>node(labels[i],p[0],p[1]));
+  const f=(t*.23)%4,idx=Math.floor(f),a=pts[idx],b=pts[(idx+1)%4],u=f-idx;dot(a[0]+106+(b[0]-a[0])*u,a[1]+42+(b[1]-a[1])*u,9,P.gold);
+ }
+}
+async function init(data){board=data;await hero.decode();await document.fonts.ready;return true}
+function frame(t){
+ errors=[];x.globalAlpha=1;x.fillStyle=P.bg;x.fillRect(0,0,1920,1080);
+ const scene=board.scenes.find(s=>t>=s.start&&t<s.end)||board.scenes.at(-1),u=t-scene.start;
+ if(scene.mode==='hero')heroBg(t);else{let g=x.createRadialGradient(1510,470,30,1510,470,820);g.addColorStop(0,'#103247');g.addColorStop(1,P.bg);x.fillStyle=g;x.fillRect(0,0,1920,1080)}
+ text('◆  GAMECRAFT',96,90,29,P.teal,700);text('概念演示 · 合成旁白',1475,90,25,P.muted,500,360);
+ x.save();x.globalAlpha=ease(u/.65)*clamp((scene.end-t)/.35);x.translate(0,(1-ease(u/.65))*28);
+ text(scene.eyebrow,98,scene.mode==='hero'?265:220,29,P.teal,600);
+ text(scene.title,96,scene.mode==='hero'?390:320,scene.mode==='hero'?76:68,P.white,700,1720);
+ scene.bullets.forEach((b,i)=>{const start=.5+i*.26,alpha=ease((u-start)/.55);x.save();x.globalAlpha*=alpha;const yy=(scene.mode==='hero'?495:445)+i*110;dot(110,yy-12,5,P.gold);text(b,140+(1-alpha)*18,yy,scene.id==='outro'?43:39,i===0?P.white:P.muted,500,scene.mode==='hero'?1500:930);x.restore()});
+ if(scene.mode!=='hero')network(u,scene.mode);
+ x.restore();
+ const caption=board.captions.find(c=>t>=c.start&&t<c.end);
+ if(caption){x.font=`500 35px ${font}`;const w=Math.min(1720,x.measureText(caption.text).width+70);rr((1920-w)/2,929,w,72,13,'#020910df');text(caption.text,(1920-x.measureText(caption.text).width)/2,978,35,P.white,500,1660)}
+ rr(96,1035,1728,4,2,'#284255');rr(96,1035,1728*clamp(t/board.duration),4,2,P.teal);
+ const n=board.scenes.indexOf(scene)+1;text(`${String(n).padStart(2,'0')} / 08`,96,1014,21,P.muted,500);text('github.com/wusar/gamecraft-skills',1290,1014,22,P.muted,500,535);
+ return {scene:scene.id,time:t,overflows:errors};
+}
+window.Gamecraft={init,frame};
+</script></html>

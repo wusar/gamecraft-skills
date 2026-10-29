@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-29",
+  "file": "gamecraft-intro.mp4",
+  "duration_seconds": 119.9,
+  "bytes": 15007968,
+  "sha256": "04e83d2c604dd5c9ccc5e5112674db4aa85e0d3cd055de86d8bffb3f9a90e19f",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "119.900000",
+      "size": "15007968"
+    }
+  },
+  "audio_peak_dbfs": -1.4,
+  "checks": {
+    "full_decode": true,
+    "duration_matches_manifest": true,
+    "resolution_1920_1080": true,
+    "fps_24": true,
+    "audio_present": true,
+    "non_silent_peak": true,
+    "all_captions_in_bounds": true
+  },
+  "reviewed_scene_samples": [
+    {
+      "scene": "intro",
+      "time_seconds": 6.529
+    },
+    {
+      "scene": "evidence",
+      "time_seconds": 20.155
+    },
+    {
+      "scene": "search",
+      "time_seconds": 34.927
+    },
+    {
+      "scene": "prototype",
+      "time_seconds": 50.138
+    },
+    {
+      "scene": "assets",
+      "time_seconds": 65.767
+    },
+    {
+      "scene": "verify",
+      "time_seconds": 82.022
+    },
+    {
+      "scene": "video",
+      "time_seconds": 98.481
+    },
+    {
+      "scene": "outro",
+      "time_seconds": 113.321
+    }
+  ],
+  "route": "AI-generated illustration + deterministic Canvas graphics + system TTS; not gameplay or text-to-video",
+  "limitations": [
+    "Synthetic voice; no independent human listening review.",
+    "Caption subdivisions use proportional timing inside individually synthesized phrases, not forced word alignment.",
+    "Frames and source scene motion inspected; no external audience usability test."
+  ]
+}

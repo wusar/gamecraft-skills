@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.private/
+.cache/
+node_modules/
+__pycache__/
+*.pyc
+research/raw/
+media/output/
+*.wav
+*.m4a
+*.m4s
+*.mp4
+*.webm
+*.log

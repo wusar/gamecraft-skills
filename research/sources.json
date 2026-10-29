@@ -1,0 +1,402 @@
+{
+  "checked_date": "2026-10-29",
+  "video_count": 11,
+  "video_duration_seconds": 10739,
+  "method": "Full local audio ASR + 12 reviewed sampled frames per video. No author project was reproduced.",
+  "sources": [
+    {
+      "id": "dragon-prototype",
+      "type": "video",
+      "title": "Claude Fable 5 利用 Godot MCP 和 Blender MCP 制作完整游戏 #AI游戏开发 #Claude #Fable5 #Godot",
+      "author": "xcount",
+      "original_author": null,
+      "independence_group": "xcount",
+      "url": "https://www.bilibili.com/video/BV16jjj6WEkc/",
+      "published_date": "2026-06-17",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 786,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "先浏览器验证再迁引擎；含赞助，绑定和阴影仍有缺陷。"
+    },
+    {
+      "id": "unreal-runner",
+      "type": "video",
+      "title": "🦊他能成功吗？Claude Code 接管虚幻引擎5，打造一款游戏 | 带你走完整个流程",
+      "author": "Apeak_虚幻丰哥",
+      "original_author": "Stefan 3D AI",
+      "independence_group": "Stefan 3D AI",
+      "url": "https://www.bilibili.com/video/BV1cCEi6sEU5/",
+      "published_date": "2026-06-11",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 1005,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "模板、小步提交、截图反馈；末尾仍有碰撞和重叠问题。"
+    },
+    {
+      "id": "unreal-roguelike",
+      "type": "video",
+      "title": "挑战！48小时内做出一款Roguelike游戏——从概念到可玩的游戏——目前最快的 AI 工作流",
+      "author": "Apeak_虚幻丰哥",
+      "original_author": "Stefan 3D AI",
+      "independence_group": "Stefan 3D AI",
+      "url": "https://www.bilibili.com/video/BV1cpjF6jEGV/",
+      "published_date": "2026-06-18",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 1153,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "使用已购模板及环境资产，成果为可玩原型。"
+    },
+    {
+      "id": "unity-character-animation",
+      "type": "video",
+      "title": "用AI从零造游戏：角色动画全靠GPT-6搞定",
+      "author": "openclawai",
+      "original_author": "Stefan 3D AI",
+      "independence_group": "Stefan 3D AI",
+      "url": "https://www.bilibili.com/video/BV1C5ab6MEU1/",
+      "published_date": "2026-09-27",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 1418,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 4,
+      "note": "角色测试场、动作复用、姿势参考；部分生成过程未录。"
+    },
+    {
+      "id": "godot-pitfalls",
+      "type": "video",
+      "title": "躺着也能写功能？Godot+AI开发中踩过的坑和经验总结 | 地块召唤师开发实战 #02",
+      "author": "像素夹心饼干",
+      "original_author": null,
+      "independence_group": "像素夹心饼干",
+      "url": "https://www.bilibili.com/video/BV1bFk7BvEuL/",
+      "published_date": "2026-01-20",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 604,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "命名冲突、TODO审阅和项目文档；2D工程案例。"
+    },
+    {
+      "id": "godot-workflow",
+      "type": "video",
+      "title": "只有工具还不够！如何把 AI 工作流真正“串”起来？ | 地块召唤师开发实战 #05",
+      "author": "像素夹心饼干",
+      "original_author": null,
+      "independence_group": "像素夹心饼干",
+      "url": "https://www.bilibili.com/video/BV1k16YBwE2V/",
+      "published_date": "2026-01-30",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 614,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "实战中出现测试遗漏及旧场景误引用；2D案例。"
+    },
+    {
+      "id": "godot-framework",
+      "type": "video",
+      "title": "独立开发太累？Godot + Claude Code 搭建 AI 辅助工作流，效率直接起飞！ | 地块召唤师开发实战 #01",
+      "author": "像素夹心饼干",
+      "original_author": null,
+      "independence_group": "像素夹心饼干",
+      "url": "https://www.bilibili.com/video/BV1xBrDB9E42/",
+      "published_date": "2026-01-18",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 411,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "工具与通用/独有系统分离；主要是框架介绍。"
+    },
+    {
+      "id": "character-import",
+      "type": "video",
+      "title": "AI 生成的角色太丑？我把真3D模型接入VibeCoding，还带全套动画",
+      "author": "ZZ是画渣",
+      "original_author": null,
+      "independence_group": "ZZ是画渣",
+      "url": "https://www.bilibili.com/video/BV1aaez6WED9/",
+      "published_date": "2026-09-20",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 283,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "FBX到GLB、动画位移与脚本位移的责任划分。"
+    },
+    {
+      "id": "unity-mcp-live",
+      "type": "video",
+      "title": "【技术日志】AI 怎么操作 Unity ？Unity MCP 实测踩坑",
+      "author": "虚拟游戏制作人DukeFeng",
+      "original_author": null,
+      "independence_group": "虚拟游戏制作人DukeFeng",
+      "url": "https://www.bilibili.com/video/BV1gP7Q6VEZy/",
+      "published_date": "2026-06-06",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 3698,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "长篇现场配置与跨客户端比较；不是完整游戏交付。"
+    },
+    {
+      "id": "early-unreal-mcp",
+      "type": "video",
+      "title": "MCP到虚幻5，感觉吃了一坨大的，但是有点甜！AI创作游戏前瞻，trae+UE",
+      "author": "AI上火星",
+      "original_author": null,
+      "independence_group": "AI上火星",
+      "url": "https://www.bilibili.com/video/BV1JmG9zPEqw/",
+      "published_date": "2025-04-30",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 737,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "2025年早期工具连接演示；不沿用旧版本配置。"
+    },
+    {
+      "id": "asset-teaser",
+      "type": "video",
+      "title": "AI生成的3D模型为何在游戏开发中频频碰壁？❌",
+      "author": "环球影视工厂",
+      "original_author": null,
+      "independence_group": "环球影视工厂",
+      "url": "https://www.bilibili.com/video/BV1JxA6zBEEj/",
+      "published_date": "2026-02-26",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 30,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "30秒预告，缺少完整论证，不用于支持生产质量结论。"
+    },
+    {
+      "id": "deepseek-search",
+      "type": "primary_document",
+      "title": "DeepSeek Search & Fetch",
+      "url": "https://api-docs.deepseek.com/guides/search/",
+      "checked_date": "2026-10-29",
+      "access": {
+        "body": "retrieved",
+        "local_reproduction": false
+      },
+      "note": "Independent Search and Fetch APIs; live Search verified."
+    },
+    {
+      "id": "deepseek-responses",
+      "type": "primary_document",
+      "title": "DeepSeek Responses compatibility",
+      "url": "https://api-docs.deepseek.com/guides/responses_api/",
+      "checked_date": "2026-10-29",
+      "access": {
+        "body": "retrieved",
+        "local_reproduction": false
+      },
+      "note": "Snapshot distinguishes V4 Pro built-in web_search from Flash."
+    },
+    {
+      "id": "epic-mcp",
+      "type": "primary_document",
+      "title": "Unreal MCP",
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor",
+      "checked_date": "2026-10-29",
+      "access": {
+        "body": "retrieved",
+        "local_reproduction": false
+      },
+      "note": "UE5.8; Experimental; not installed in this project."
+    },
+    {
+      "id": "remotion-agents",
+      "type": "primary_document",
+      "title": "Remotion coding agents",
+      "url": "https://www.remotion.dev/docs/ai/coding-agents",
+      "checked_date": "2026-10-29",
+      "access": {
+        "body": "retrieved",
+        "local_reproduction": false
+      },
+      "note": "Official code-video workflow; this project renders with Canvas/FFmpeg."
+    },
+    {
+      "id": "remotion-skills",
+      "type": "primary_document",
+      "title": "Remotion Agent Skills",
+      "url": "https://www.remotion.dev/docs/ai/skills",
+      "checked_date": "2026-10-29",
+      "access": {
+        "body": "retrieved",
+        "local_reproduction": false
+      },
+      "note": "Official maintained skills; not copied into this repository."
+    },
+    {
+      "id": "gdunit",
+      "type": "primary_document",
+      "title": "GdUnit4",
+      "url": "https://github.com/godot-gdunit-labs/gdUnit4",
+      "checked_date": "2026-10-29",
+      "access": {
+        "body": "retrieved",
+        "local_reproduction": false
+      },
+      "note": "Original repository; version compatibility must be checked."
+    },
+    {
+      "id": "unreal-skills",
+      "type": "primary_document",
+      "title": "Unreal Engine Skills",
+      "url": "https://github.com/kevinpbuckley/unreal-engine-skills",
+      "checked_date": "2026-10-29",
+      "access": {
+        "body": "retrieved",
+        "local_reproduction": false
+      },
+      "note": "Independent community project, targets UE5.8; not installed."
+    },
+    {
+      "id": "sprite-forge",
+      "type": "primary_document",
+      "title": "Agent Sprite Forge",
+      "url": "https://github.com/0x0funky/agent-sprite-forge",
+      "checked_date": "2026-10-29",
+      "access": {
+        "body": "retrieved",
+        "local_reproduction": false
+      },
+      "note": "Original asset pipeline; editor import limitations remain important."
+    }
+  ],
+  "claims": [
+    {
+      "id": "web-prototype-then-port",
+      "source_ids": [
+        "dragon-prototype"
+      ],
+      "timestamp_seconds": 137,
+      "level": "author_demonstration",
+      "claim": "可先在浏览器验证玩法，再按交付需要评估迁移。",
+      "conditions": "浏览器原型足以验证核心机制；迁移成本另计。",
+      "verify": "在目标引擎重跑行为与视觉验收。"
+    },
+    {
+      "id": "reuse-template",
+      "source_ids": [
+        "unreal-roguelike"
+      ],
+      "timestamp_seconds": 436,
+      "level": "author_demonstration",
+      "claim": "原型速度可能来自已购模板与环境资产。",
+      "conditions": "模板匹配玩法且许可允许。",
+      "verify": "记录模板贡献和独有玩法，实际运行。"
+    },
+    {
+      "id": "character-playground",
+      "source_ids": [
+        "unity-character-animation"
+      ],
+      "timestamp_seconds": 375,
+      "level": "author_demonstration",
+      "claim": "为角色和动作建独立测试场再扩阵容。",
+      "conditions": "重复导入角色、骨架或动画。",
+      "verify": "切换动作，检查比例、命中和切换状态。"
+    },
+    {
+      "id": "movement-owner",
+      "source_ids": [
+        "character-import"
+      ],
+      "timestamp_seconds": 149,
+      "level": "author_demonstration",
+      "claim": "为脚本位移与动画根位移确定责任，避免叠加。",
+      "conditions": "使用脚本控制位置时可用 In Place；root motion 项目需保持设计。",
+      "verify": "记录同动作下位移与碰撞；替换角色后复测。"
+    },
+    {
+      "id": "bridge-reload",
+      "source_ids": [
+        "unity-mcp-live"
+      ],
+      "timestamp_seconds": 852,
+      "level": "author_report",
+      "claim": "脚本编译可影响当时的 MCP 连接，需核对版本和实际状态。",
+      "conditions": "属于作者录制时的工具环境。",
+      "verify": "修改脚本后检查连接与编辑器状态，再决定重试。"
+    },
+    {
+      "id": "persist-checks",
+      "source_ids": [
+        "godot-workflow"
+      ],
+      "timestamp_seconds": 209,
+      "level": "author_demonstration",
+      "claim": "持久记录计划、有效场景和验收条件，避免遗漏。",
+      "conditions": "长会话或多模块项目。",
+      "verify": "从入口跑通主流程，核对真实测试结果。"
+    },
+    {
+      "id": "search-is-discovery",
+      "source_ids": [
+        "deepseek-search"
+      ],
+      "level": "local_api_test",
+      "claim": "独立 Search API 可返回可核验的真实网页链接。",
+      "conditions": "本次4次查询成功；不代表长期质量。",
+      "verify": "取得原始正文再判断具体主张。"
+    }
+  ]
+}
