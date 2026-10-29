@@ -1,0 +1,17 @@
+{
+  "batch": "2026-10-29-02",
+  "discovery": "Reused prior verified DeepSeek Search candidates; no repeated search calls.",
+  "new_video_ids": [
+    "BV1zgJY6VEvZ",
+    "BV1kYNs6sEsq",
+    "BV1muMA6VEQ6"
+  ],
+  "new_repository_urls": [
+    "https://github.com/MihirSahu14/playbench",
+    "https://github.com/g0dam/video-studio-skills",
+    "https://github.com/RandomNest/aivideo-production-skills"
+  ],
+  "audio_seconds_added": 3014,
+  "frames_reviewed_added": 36,
+  "third_party_raw_media_published": false
+}

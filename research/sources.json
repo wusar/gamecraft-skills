@@ -1,7 +1,7 @@
 {
   "checked_date": "2026-10-29",
-  "video_count": 11,
-  "video_duration_seconds": 10739,
+  "video_count": 14,
+  "video_duration_seconds": 13753,
   "method": "Full local audio ASR + 12 reviewed sampled frames per video. No author project was reproduced.",
   "sources": [
     {
@@ -319,6 +319,123 @@
         "local_reproduction": false
       },
       "note": "Original asset pipeline; editor import limitations remain important."
+    },
+    {
+      "id": "little-prince-commentary",
+      "type": "video",
+      "title": "十六天做出小王子游戏真正难的是最后那一步",
+      "author": "超级野菜人i",
+      "original_author": null,
+      "independence_group": "超级野菜人i",
+      "url": "https://www.bilibili.com/video/BV1zgJY6VEvZ/",
+      "published_date": "2026-10-17",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 308,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "二手评论，原始开发工程未取得；统计和玩家反馈没有独立核验。"
+    },
+    {
+      "id": "asset-selection-review",
+      "type": "video",
+      "title": "AI 3D 生成工具避坑指南：Tripo、Meshy 与 Hunyuan 实测对比与选型建议",
+      "author": "设计门外憨",
+      "original_author": "Stefan 3D AI",
+      "independence_group": "Stefan 3D AI",
+      "url": "https://www.bilibili.com/video/BV1kYNs6sEsq/",
+      "published_date": "2026-07-12",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 859,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 0,
+      "note": "作者主观评测与平台展示，不采用价格或排名作为本机结论。"
+    },
+    {
+      "id": "unreal-platformer-pipeline",
+      "type": "video",
+      "title": "72小时独立开发：利用AI资产与Claude Code实现UE5.8游戏逻辑",
+      "author": "设计门外憨",
+      "original_author": "Stefan 3D AI",
+      "independence_group": "Stefan 3D AI",
+      "url": "https://www.bilibili.com/video/BV1muMA6VEQ6/",
+      "published_date": "2026-07-05",
+      "checked_date": "2026-10-29",
+      "duration_seconds": 1847,
+      "access": {
+        "metadata": "retrieved",
+        "audio": "transcribed_full",
+        "visual": "12 sampled frames reviewed",
+        "local_reproduction": false
+      },
+      "transcript_warning_count": 4,
+      "note": "同一原作者的译配流程；本机未复现72小时工期或作者工程。"
+    },
+    {
+      "id": "playbench",
+      "type": "primary_document",
+      "title": "MihirSahu14/playbench",
+      "url": "https://github.com/MihirSahu14/playbench",
+      "checked_date": "2026-10-29",
+      "version_snapshot": {
+        "branch": "main",
+        "commit": "3a4f7a285fc2a7af9a2d14b36c945e4e2071be0b",
+        "commit_date": "2026-10-19T22:26:21Z",
+        "license": "MIT",
+        "archived": false
+      },
+      "access": {
+        "body": "README retrieved",
+        "local_reproduction": false
+      },
+      "note": "Related work only; not installed or independently tested."
+    },
+    {
+      "id": "video-studio-skills",
+      "type": "primary_document",
+      "title": "g0dam/video-studio-skills",
+      "url": "https://github.com/g0dam/video-studio-skills",
+      "checked_date": "2026-10-29",
+      "version_snapshot": {
+        "branch": "main",
+        "commit": "a99151bc42f8de7a73a6ca3caa2ab10a6a653a46",
+        "commit_date": "2026-05-28T06:44:50Z",
+        "license": "MIT",
+        "archived": false
+      },
+      "access": {
+        "body": "README retrieved",
+        "local_reproduction": false
+      },
+      "note": "Related work only; not installed or independently tested."
+    },
+    {
+      "id": "aivideo-production-skills",
+      "type": "primary_document",
+      "title": "RandomNest/aivideo-production-skills",
+      "url": "https://github.com/RandomNest/aivideo-production-skills",
+      "checked_date": "2026-10-29",
+      "version_snapshot": {
+        "branch": "main",
+        "commit": "77b3dc44266bb7a52e675ab50ebf3f5d67db1cdb",
+        "commit_date": "2026-02-20T17:50:28Z",
+        "license": "MIT",
+        "archived": false
+      },
+      "access": {
+        "body": "README retrieved",
+        "local_reproduction": false
+      },
+      "note": "Related work only; not installed or independently tested."
     }
   ],
   "claims": [
@@ -397,6 +514,39 @@
       "claim": "独立 Search API 可返回可核验的真实网页链接。",
       "conditions": "本次4次查询成功；不代表长期质量。",
       "verify": "取得原始正文再判断具体主张。"
+    },
+    {
+      "id": "interaction-control-regression",
+      "source_ids": [
+        "little-prince-commentary"
+      ],
+      "timestamp_seconds": 245,
+      "level": "secondary_commentary",
+      "claim": "关键交互前后复测移动与相机状态，避免过场或交互结束后控制异常。",
+      "conditions": "此来源转述他人项目，未独立核验具体故障。",
+      "verify": "录制交互前、交互中、退出后的输入与朝向；检查暂停、失败和重试。"
+    },
+    {
+      "id": "multi-angle-inspection",
+      "source_ids": [
+        "little-prince-commentary"
+      ],
+      "timestamp_seconds": 215,
+      "level": "secondary_commentary",
+      "claim": "空间关系应从多个视角检查，单张正面截图不足以发现遮挡或穿插。",
+      "conditions": "适用于可转动镜头的3D场景；不能代替碰撞实际运行。",
+      "verify": "固定正面、侧面和俯视位置，再跑玩家通行路径。"
+    },
+    {
+      "id": "usable-asset-cost",
+      "source_ids": [
+        "asset-selection-review"
+      ],
+      "timestamp_seconds": 820,
+      "level": "author_recommendation",
+      "claim": "评估资产方案时计入达到可用状态的修整工作，而非只看一次生成价格。",
+      "conditions": "作者个人工具偏好和当时价格不迁移为当前推荐。",
+      "verify": "用相同参考和目标规格记录生成、修整、绑定、导入与失败重试。"
     }
   ]
 }

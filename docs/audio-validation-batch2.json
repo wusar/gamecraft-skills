@@ -1,0 +1,62 @@
+{
+  "checked_date": "2026-10-29",
+  "method": "Public Bilibili media audio extraction; local GPU ASR; 12 sampled frames/video. No signed-in browser session was accessed.",
+  "total_transcribed": 14,
+  "total_duration_seconds": 13753,
+  "new_videos": [
+    {
+      "bvid": "BV1kYNs6sEsq",
+      "duration_seconds": 859,
+      "audio_sha256": "ce4dd6cee3685874579708e3ec628da0170f7c32e93ae449a9ef3d754921d07e",
+      "transcription": {
+        "coverage": [
+          0,
+          859
+        ],
+        "segments": 395,
+        "warnings": 0,
+        "chunks": 8,
+        "expected_chunks": 8,
+        "all_chunks_present": true
+      },
+      "sampled_frames": 12
+    },
+    {
+      "bvid": "BV1muMA6VEQ6",
+      "duration_seconds": 1847,
+      "audio_sha256": "6c4808c3b46fde02309357f489b93ed39e1867d6ee44cfb14c640765f1a532fe",
+      "transcription": {
+        "coverage": [
+          0,
+          1847
+        ],
+        "segments": 1056,
+        "warnings": 4,
+        "chunks": 16,
+        "expected_chunks": 16,
+        "all_chunks_present": true
+      },
+      "sampled_frames": 12
+    },
+    {
+      "bvid": "BV1zgJY6VEvZ",
+      "duration_seconds": 308,
+      "audio_sha256": "29d3dc74537bd8b83b7062d051c0e84183f04881516c30f555cb5d0e97154f5c",
+      "transcription": {
+        "coverage": [
+          0,
+          308
+        ],
+        "segments": 179,
+        "warnings": 0,
+        "chunks": 3,
+        "expected_chunks": 3,
+        "all_chunks_present": true
+      },
+      "sampled_frames": 12
+    }
+  ],
+  "offline_tests_passed": 10,
+  "registry_validation_errors": 0,
+  "game_end_to_end_tested": false
+}
